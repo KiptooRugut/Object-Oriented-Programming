@@ -52,3 +52,13 @@ if __name__ == "__main__":
     print(my_printed_book.read())  # inherited method
     print(my_printed_book.book_info())  # overridden method
     print(my_printed_book.carry())  # subclass-specific method
+
+
+
+# Activity 2: Polymorphism Challenge
+# Defines different Vehicle classes each implementing move() differently to demonstrate polymorphism
+
+class Vehicle:
+    def move(self):
+        # Abstract method: should be overridden in subclasses
+        raise NotImplementedError("Subclasses must implement the move method.")
