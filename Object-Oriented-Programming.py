@@ -62,3 +62,8 @@ class Vehicle:
     def move(self):
         # Abstract method: should be overridden in subclasses
         raise NotImplementedError("Subclasses must implement the move method.")
+    
+class Car(Vehicle):
+    def move(self):
+        # Car moves by driving
+        return "Driving 🚗"
