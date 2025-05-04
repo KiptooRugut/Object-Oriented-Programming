@@ -16,3 +16,7 @@ class Book:
     def book_info(self):
         # Return detailed information about the book
         return f"'{self.title}' is a {self.genre} book with {self.pages} pages."
+
+    def __str__(self):
+        # String representation of the Book object
+        return f"Book: {self.title} by {self.author}"
