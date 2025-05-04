@@ -77,3 +77,8 @@ class Boat(Vehicle):
     def move(self):
         # Boat moves by sailing
         return "Sailing ⛴️"
+
+class Bicycle(Vehicle):
+    def move(self):
+        # Bicycle moves by pedaling
+        return "Pedaling 🚲"
