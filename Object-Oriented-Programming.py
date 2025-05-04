@@ -28,3 +28,8 @@ class PrintedBook(Book):
         # Initialize additional attributes unique to PrintedBook
         self.cover_type = cover_type  # e.g., Hardcover or Paperback
         self.weight = weight  # in grams
+        
+    def book_info(self):
+        # Override to include cover type and weight
+        base_info = super().book_info()
+        return f"{base_info} It is a {self.cover_type} edition weighing {self.weight} grams."
