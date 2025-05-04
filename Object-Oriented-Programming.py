@@ -37,3 +37,18 @@ class PrintedBook(Book):
     def carry(self):
         # New method specific to printed books
         return f"You carry the {self.cover_type} book titled '{self.title}'. It's {self.weight} grams."
+    
+# Example usage
+if __name__ == "__main__":
+    my_book = Book("1994", "Mike Kiptoo", 327, "After Series")
+    print(my_book)
+    print(my_book.read())
+    print(my_book.book_info())
+
+    print()  # blank line
+
+    my_printed_book = PrintedBook("Blackswan Theory", "Blackbriar Mik", 287, "Fiction", "Hardcover", 500)
+    print(my_printed_book)
+    print(my_printed_book.read())  # inherited method
+    print(my_printed_book.book_info())  # overridden method
+    print(my_printed_book.carry())  # subclass-specific method
