@@ -12,3 +12,7 @@ class Book:
     def read(self):
         # Simulate reading the book
         return f"You are reading '{self.title}' by {self.author}."
+    
+    def book_info(self):
+        # Return detailed information about the book
+        return f"'{self.title}' is a {self.genre} book with {self.pages} pages."
