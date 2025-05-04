@@ -8,3 +8,7 @@ class Book:
         self.author = author
         self.pages = pages
         self.genre = genre
+    
+    def read(self):
+        # Simulate reading the book
+        return f"You are reading '{self.title}' by {self.author}."
