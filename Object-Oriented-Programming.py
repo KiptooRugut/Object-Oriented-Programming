@@ -67,3 +67,8 @@ class Car(Vehicle):
     def move(self):
         # Car moves by driving
         return "Driving 🚗"
+
+class Plane(Vehicle):
+    def move(self):
+        # Plane moves by flying
+        return "Flying ✈️"
