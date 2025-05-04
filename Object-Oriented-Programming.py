@@ -82,3 +82,11 @@ class Bicycle(Vehicle):
     def move(self):
         # Bicycle moves by pedaling
         return "Pedaling 🚲"
+    
+# Example usage
+if __name__ == "__main__":
+    vehicles = [Car(), Plane(), Boat(), Bicycle()]
+
+    for vehicle in vehicles:
+        # Call move() polymorphically
+        print(vehicle.move())
