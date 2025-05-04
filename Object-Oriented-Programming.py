@@ -25,3 +25,6 @@ class PrintedBook(Book):
     def __init__(self, title, author, pages, genre, cover_type, weight):
         # Call the parent constructor to initialize common attributes
         super().__init__(title, author, pages, genre)
+        # Initialize additional attributes unique to PrintedBook
+        self.cover_type = cover_type  # e.g., Hardcover or Paperback
+        self.weight = weight  # in grams
