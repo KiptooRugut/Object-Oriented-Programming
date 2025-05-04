@@ -20,3 +20,8 @@ class Book:
     def __str__(self):
         # String representation of the Book object
         return f"Book: {self.title} by {self.author}"
+
+class PrintedBook(Book):
+    def __init__(self, title, author, pages, genre, cover_type, weight):
+        # Call the parent constructor to initialize common attributes
+        super().__init__(title, author, pages, genre)
